@@ -1,0 +1,25 @@
+
+
+[data-reach-menu-button] {
+
+}
+
+[data-reach-menu-button][aria-expanded="true"] {
+    border-radius: 5px 5px 0 0;
+}
+
+[data-reach-menu-list] {
+    border-radius: 0 0 5px 5px;
+    border: 2px solid #ccc;
+    width: 150px;
+    /* height: 100px; */
+    background-color: white;
+    transform: translateY(-2px);
+    margin-top: 1rem;
+}
+
+
+.element-dropdown {
+    padding: 1rem;
+    border: 0.25px solid;
+}

@@ -1,0 +1,24 @@
+.one-info {
+    width: 100%;
+    border: 1px none #ccc;
+    border-radius: 1px; 
+    padding: 20px;
+    /* background-color: #e7f5ff; */
+    margin: 1rem 0;
+}
+
+.one-info img {
+    width: 40px;
+    margin-bottom: 1rem;
+}
+
+.one-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.one-info p {
+    font-size: 1rem;
+    color: #555;
+}

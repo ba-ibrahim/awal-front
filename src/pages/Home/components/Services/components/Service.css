@@ -1,0 +1,140 @@
+/* Service container styles */
+.service-container {
+    width: 100%;
+    padding: 0 1rem; /* Add padding for better spacing on smaller screens */
+}
+
+/* Title section */
+.service-container .title {
+    position: relative;
+    margin-bottom: 3rem; /* Space between title and content */
+}
+
+.service-container .title h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.125);
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 0.7rem;
+}
+
+/* For smaller screens, reduce font size and spacing */
+@media (max-width: 768px) {
+    .service-container .title h1 {
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .service-container .title h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+        top: 80%;
+    }
+}
+
+.service-container .title h2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 70%;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    font-weight: 700;
+}
+
+/* Service layout styles */
+.service {
+    display: flex;
+    gap: 8%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow flex items to wrap for smaller screens */
+}
+
+.service .image-preview {
+    width: 46%;
+}
+
+.service .image-preview img {
+    width: 100%;
+    height: auto;
+}
+
+/* Details section */
+.service .details {
+    width: 46%;
+    padding: 10px;
+}
+
+.service .details h1 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.service .details p {
+    font-size: 1rem;
+}
+
+/* For smaller screens, stack elements vertically */
+@media (max-width: 768px) {
+    .service .image-preview,
+    .service .details {
+        width: 100%; /* Make each element take full width */
+        padding: 1rem;
+    }
+
+    .service .details h1 {
+        font-size: 1.25rem; /* Smaller heading for mobile */
+    }
+
+    .service .details p {
+        font-size: 1rem; /* Adjust text size */
+    }
+
+    /* Add a bit of margin to separate the elements */
+    .service .image-preview {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Adjust for mobile devices (less than 480px) */
+@media (max-width: 480px) {
+    .service-container .title h1 {
+        font-size: 2rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .service-container .title h2 {
+        font-size: 1.2rem;
+        letter-spacing: 0.3rem;
+        top: 85%;
+    }
+
+    .service .details h1 {
+        font-size: 1.1rem; /* Further reduce font size */
+    }
+
+    .service .details p {
+        font-size: 0.9rem; /* Smaller paragraph text */
+    }
+
+    .service .image-preview img {
+        width: 100%; /* Make image full width */
+    }
+}
+
+/* Left-to-right (LTR) direction styles */
+.left {
+    direction: ltr;
+}
+
+/* Right-to-left (RTL) direction styles */
+.right > * {
+    text-align: left !important;
+}
+
+.right {
+    direction: rtl;
+}

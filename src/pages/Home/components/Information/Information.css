@@ -1,0 +1,43 @@
+
+
+.information {
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.information {
+    display: grid;
+    gap: 20px; 
+    grid-template-columns: repeat(auto-fit, minmax(275px, 3fr)); /* Makes it responsive */
+    max-width: 1200px; /* Optional: limits max width of the entire container */
+    padding: 20px;
+}
+
+.information > div {
+    max-width: 325px; /* Ensures each item has a max width of 300px */
+    width: 100%; /* Keeps each item responsive within the grid */
+}
+
+.about-us .title {
+    position: relative;
+}
+
+.about-us .title h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.125);
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 0.7rem;
+}
+
+
+.about-us .title h2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 70%;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    font-weight: 700;
+}

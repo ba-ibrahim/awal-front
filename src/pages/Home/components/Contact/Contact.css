@@ -1,0 +1,56 @@
+/* Title section styles */
+.contact .title {
+    position: relative;
+    margin-bottom: 3rem; /* Add margin to the bottom */
+}
+
+/* Main title (h1) */
+.contact .title h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.125);
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 0.7rem;
+}
+
+/* Subtitle (h2) */
+.contact .title h2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 70%;
+    font-size: 1.7rem;
+    letter-spacing: 1rem;
+    font-weight: 700;
+}
+
+/* Responsive for medium screens (tablets) */
+@media (max-width: 768px) {
+    .contact .title h1 {
+        font-size: 3rem; /* Smaller font size for h1 */
+        letter-spacing: 0.5rem; /* Reduce letter spacing */
+    }
+
+    .contact .title h2 {
+        font-size: 1.5rem; /* Smaller font size for h2 */
+        top: 75%; /* Adjust top position */
+        letter-spacing: 0.5rem; /* Reduce letter spacing */
+    }
+}
+
+/* Responsive for smaller screens (phones) */
+@media (max-width: 480px) {
+    .contact .title h1 {
+        font-size: 2rem; /* Even smaller font size for h1 */
+        letter-spacing: 0.3rem; /* Reduce letter spacing */
+    }
+
+    .contact .title h2 {
+        font-size: 1.2rem; /* Smaller font size for h2 */
+        top: 60%; /* Adjust top position further */
+        letter-spacing: 0.3rem; 
+        text-align: center;/* Reduce letter spacing */
+    }
+}
+
